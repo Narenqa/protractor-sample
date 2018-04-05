@@ -1,0 +1,43 @@
+{
+  "name": "protractor-cucumber",
+  "version": "1.0.0",
+  "license": "",
+  "description": "To demostrate protractor cucumber tests for angular/non angular apps framework",
+  "keywords": [
+    "protractor",
+    "cucumber",
+    "angular",
+    "angularjs",
+    "testing",
+    "behaviour driven development",
+    "bdd",
+    "selenium",
+    "webdriverJS",
+    "gherkin",
+    "automation testing"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "protractor config/config.js",
+    "webdriver-start": "webdriver-manager start",
+    "webdriver-update": "webdriver-manager update"
+  },
+  "author": "",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "cucumber": "^3.1.0",
+    "cucumber-html-report": "^0.6.2",
+    "cucumber-html-reporter": "^3.0.4",
+    "cucumberjs-allure-reporter": "^1.0.3",
+    "geckodriver": "~1.2.0",
+    "mkdirp": "^0.5.1",
+    "protractor": "^5.2.0",
+    "protractor-cucumber-framework": "^4.1.1",
+    "webdriver-manager": "^12.0.6"
+  },
+  "repository": ""
+}

@@ -9,16 +9,16 @@ exports.config = {
   // webDriverProxy: 'http://localhost:8888',
 
   capabilities: {
-    browserName: process.env.TEST_BROWSER_NAME || "chrome",
-        proxy:{
-            "proxyType": "manual",
-
-          "httpProxy": "http://127.0.0.1:8888",
-          // "httpProxyPort": 8888,
-          "sslProxy": "http://127.0.0.1:8888"
-          // "sslProxyPort": 8888
-
-           }
+    browserName: process.env.TEST_BROWSER_NAME || "chrome"
+    // ,
+    //     proxy:{
+    //         "proxyType": "manual",
+    //         "httpProxy": "http://127.0.0.1:8888",
+    //         // "httpProxyPort": 8888,
+    //         "sslProxy": "http://127.0.0.1:8888"
+    //         // "sslProxyPort": 8888
+    //
+    //        }
 
   },
   framework: "custom",

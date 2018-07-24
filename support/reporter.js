@@ -26,7 +26,7 @@ class Reporter {
     if (!fs.existsSync(dirName)) {
       mkdirp.sync(dirName);
     }
-    }
+  }
 
   static createHTMLReport() {
 

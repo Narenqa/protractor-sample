@@ -24,6 +24,8 @@ var EC = protractor.ExpectedConditions;
 
     /*Navigate to the site and check user login */
     var navigate = function () {
+        console.log(config.baseUrl);
+        console.log(config.baseUrl+"/login/");
         return driver.findElement(by.css(cancel_notification)).click()
             .then(function () {
 
@@ -36,8 +38,10 @@ var EC = protractor.ExpectedConditions;
 
      /*Login to the site using the userrole define in users.js */
       var login = function (userid,pass_word) {
+          // EH.waitForElement(email);
           expect(driver.findElement(by.css(email)).isDisplayed());
-        return driver.findElement(by.css(email)).sendKeys(userid)
+        return sendText(email, userid)
+          // driver.findElement(by.css(email)).sendKeys(userid)
             .then(sendText(password, pass_word))
             .then(function () {
                expect(driver.findElement(by.css(login_button)).isDisplayed());
